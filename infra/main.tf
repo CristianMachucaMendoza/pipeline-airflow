@@ -77,7 +77,7 @@ resource "null_resource" "update_env" {
       sed -i "s|^S3_ENDPOINT_URL=.*|S3_ENDPOINT_URL=$STORAGE_ENDPOINT_URL|" ../.env
       sed -i "s|^S3_BUCKET_NAME=.*|S3_BUCKET_NAME=$BUCKET_NAME|" ../.env
       sed -i "s|^S3_ACCESS_KEY=.*|S3_ACCESS_KEY=$ACCESS_KEY|" ../.env
-      sed -i "s|^S3_SECRET_KEY=.*|S3_SECRET_KEY=$SECRET_KEY|" ../.env
+      sed -i "s|^S3_SECRET_KEY=.*|S3_SECRET_KEY=$SECRET_KEY|" ../.env 
     EOT
   }
 

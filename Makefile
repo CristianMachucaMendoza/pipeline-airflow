@@ -50,7 +50,13 @@ upload-data-to-bucket:
 	s3cmd put --recursive data/input_data/*.csv s3://$(S3_BUCKET_NAME)/input_data/
 	@echo "Data uploaded successfully"
 
-upload-all: upload-data-to-bucket upload-src-to-bucket upload-dags-to-bucket
+.PHONY: move-txt-data-to-bucket
+move-txt-data-to-bucket:
+	@echo "Moving txt data to $(S3_BUCKET_NAME)..."
+	yc storage s3 cp s3://otus-machuca-bucket-b1gjlbg9jdvuumq3kui1/2019-08-22.txt s3://$(S3_BUCKET_NAME)/input_data/
+	@echo "txt data uploaded successfully"
+
+upload-all: upload-src-to-bucket upload-dags-to-bucket move-txt-data-to-bucket
 
 .PHONY: clean-s3-bucket
 clean-s3-bucket:
