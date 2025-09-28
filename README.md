@@ -3,7 +3,7 @@
 ## Домашнее задание №5
 
 ## 1. Запустить систему Apache Airflow в сервисе Yandex Cloud Managed Service for Apache Airflow.
-![alt text](docs/scheme.PNG)
+![alt text](docs/scheme.png)
 
 2. Посмотрим на конфигурацию инфраструктуры в модулях Terraform
 3. Разберем DAG-пайплайн с Airflow и исходный код
