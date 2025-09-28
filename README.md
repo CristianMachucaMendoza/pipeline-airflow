@@ -14,14 +14,15 @@ https://github.com/CristianMachucaMendoza/pipeline-airflow/blob/main/src/pyspark
 
 ## 3. Убедиться, что граф загрузился в систему и отображается в графическом интерфейсе. Файл(-ы) с DAG необходимо разместить в Вашем GitHub-репозитории и предоставить для проверки.
 
+
 https://github.com/CristianMachucaMendoza/pipeline-airflow/blob/main/dags/data_pipeline.py
 https://github.com/CristianMachucaMendoza/pipeline-airflow/blob/main/src/pyspark_script.py
+
+![alt text](docs/success.png)
 
 ## 4. Разрешить периодическое исполнение разработанного DAG в Apache AirFlow и протестировать его работоспособность. Требуется дождаться не менее трёх успешных запусков процедуры очистки датасета по расписанию. Снимок экрана, подтверждающий успешную работу системы, необходимо привести в README-файле Вашего GitHub-репозитория.
 
 Scheduler success (Первый запуск не удался из-за ошибки в архитектуре инфраструктуры, но после исправления всё прошло гладко):
-![alt text](docs/success.png)
-
 ![alt text](docs/success2.png)
 
 
